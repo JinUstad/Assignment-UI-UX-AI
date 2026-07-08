@@ -46,7 +46,7 @@ export default function AdminConsole() {
     { key: 'domains', header: 'Domain Access' },
     { key: 'permissions', header: 'Permissions', render: (row) => (
       <div style={{ display: 'flex', gap: '4px' }}>
-        {row.permissions.map((p: string) => <Badge key={p} variant="outline">{p}</Badge>)}
+        {row.permissions.map((p: string) => <Badge key={p} variant="info">{p}</Badge>)}
       </div>
     )},
   ];
