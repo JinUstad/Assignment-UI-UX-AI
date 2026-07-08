@@ -1,0 +1,215 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: var(--space-xl);
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Important for Kanban full height */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+.subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.controls {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+.quarterSelector {
+  display: flex;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 4px;
+}
+.quarterBtn {
+  background: none;
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.quarterBtn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Kanban Board */
+.board {
+  display: flex;
+  gap: var(--space-lg);
+  overflow-x: auto;
+  flex: 1;
+  padding-bottom: var(--space-lg);
+}
+
+.column {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.02);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  border: 1px dashed var(--border);
+}
+.dark .column {
+  background-color: rgba(255,255,255,0.02);
+}
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  padding: 0 var(--space-sm);
+}
+.columnTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.columnCount {
+  background-color: var(--surface);
+  color: var(--text-secondary);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px; /* Scrollbar space */
+}
+/* Custom Scrollbar for columns */
+.cardList::-webkit-scrollbar {
+  width: 4px;
+}
+.cardList::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cardList::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.taskCard {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  cursor: grab;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.taskCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+.taskDomain {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.domainSales { color: #F59E0B; } /* Warning/Orange */
+.domainHR { color: #10B981; } /* Success/Green */
+.domainFinance { color: #EF4444; } /* Danger/Red */
+.domainMarketing { color: #8B5CF6; } /* Purple */
+
+.taskTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.taskDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.taskFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-sm);
+}
+.taskDate {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.taskAvatars {
+  display: flex;
+}
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--surface);
+  margin-left: -8px;
+}
+.avatar:first-child {
+  margin-left: 0;
+}

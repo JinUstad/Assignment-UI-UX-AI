@@ -1,0 +1,222 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: var(--space-xl);
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(16, 185, 129, 0.05));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+.dark .header {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(16, 185, 129, 0.15));
+}
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+.description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+}
+.headerActions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-lg);
+}
+
+.metaList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.metaItem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+.metaItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.metaLabel {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+.metaValue {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.middleGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-lg);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-primary);
+}
+
+/* Timeline for updates */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  padding-left: 20px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border);
+}
+.timelineItem {
+  position: relative;
+}
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -21px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.timelineDate {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.timelineContent {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* Documentation Links */
+.docList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.docLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background-color: rgba(0,0,0,0.02);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+.dark .docLink {
+  background-color: rgba(255,255,255,0.02);
+}
+.docLink:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}
+
+/* Related Products */
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+.relatedCard {
+  padding: var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--surface);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.relatedCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+.relatedTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .topGrid, .middleGrid {
+    grid-template-columns: 1fr;
+  }
+}
