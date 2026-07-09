@@ -68,39 +68,17 @@
   position: relative;
 }
 
-.timelineIcon {
+.timelineDot {
   position: absolute;
-  left: -40px;
-  top: 0;
-  width: 32px;
-  height: 32px;
+  left: -30px; /* centers the 12px dot on the 2px line at -24px relative to item */
+  top: 4px; /* align with first line of text */
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--surface);
-  border: 2px solid var(--border);
+  background-color: var(--primary);
+  border: 2px solid var(--surface); /* To give it a nice cutout effect */
+  box-shadow: 0 0 0 1px var(--primary); /* optional ring, or just solid */
   z-index: 1;
-}
-.iconFeature {
-  color: var(--primary);
-  border-color: var(--primary);
-  background-color: rgba(37, 99, 235, 0.1);
-}
-.iconRelease {
-  color: var(--success);
-  border-color: var(--success);
-  background-color: rgba(16, 185, 129, 0.1);
-}
-.iconBug {
-  color: var(--danger);
-  border-color: var(--danger);
-  background-color: rgba(239, 68, 68, 0.1);
-}
-.iconAnnounce {
-  color: var(--warning);
-  border-color: var(--warning);
-  background-color: rgba(245, 158, 11, 0.1);
 }
 
 .dateBlock {

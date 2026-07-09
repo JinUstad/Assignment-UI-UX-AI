@@ -80,13 +80,7 @@ export default function WhatsNew() {
   ];
 
   const getIcon = (type: string) => {
-    switch (type) {
-      case 'feature': return <div className={`${styles.timelineIcon} ${styles.iconFeature}`}><Star size={16} /></div>;
-      case 'release': return <div className={`${styles.timelineIcon} ${styles.iconRelease}`}><Rocket size={16} /></div>;
-      case 'bug': return <div className={`${styles.timelineIcon} ${styles.iconBug}`}><Bug size={16} /></div>;
-      case 'announce': return <div className={`${styles.timelineIcon} ${styles.iconAnnounce}`}><Megaphone size={16} /></div>;
-      default: return <div className={styles.timelineIcon}><Star size={16} /></div>;
-    }
+    return <div className={styles.timelineDot} />;
   };
 
   const getBadgeVariant = (type: string): any => {
@@ -111,13 +105,7 @@ export default function WhatsNew() {
             <p className={styles.subtitle}>Stay updated with the latest releases, features, and improvements to the Enterprise AI Portal.</p>
           </div>
 
-          <div className={styles.filterBar}>
-            <Button variant="primary">All Updates</Button>
-            <Button variant="ghost">Product Releases</Button>
-            <Button variant="ghost">Feature Updates</Button>
-            <Button variant="ghost">Bug Fixes</Button>
-            <Button variant="ghost">Announcements</Button>
-          </div>
+
 
           <div className={styles.timelineContainer}>
             <div className={styles.timeline}>

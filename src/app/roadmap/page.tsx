@@ -65,14 +65,6 @@ export default function Roadmap() {
             </div>
             
             <div className={styles.controls}>
-              <div className={styles.quarterSelector}>
-                <button className={`${styles.quarterBtn} ${quarter === 'Q1' ? styles.active : ''}`} onClick={() => setQuarter('Q1')}>Q1</button>
-                <button className={`${styles.quarterBtn} ${quarter === 'Q2' ? styles.active : ''}`} onClick={() => setQuarter('Q2')}>Q2</button>
-                <button className={`${styles.quarterBtn} ${quarter === 'Q3' ? styles.active : ''}`} onClick={() => setQuarter('Q3')}>Q3</button>
-                <button className={`${styles.quarterBtn} ${quarter === 'Q4' ? styles.active : ''}`} onClick={() => setQuarter('Q4')}>Q4</button>
-              </div>
-              <Button variant="outline"><List size={16} /></Button>
-              <Button variant="primary"><Columns size={16} /></Button>
               <Button variant="primary" style={{ marginLeft: '8px' }}><Plus size={16} style={{marginRight: '8px'}}/> Add Item</Button>
             </div>
           </div>

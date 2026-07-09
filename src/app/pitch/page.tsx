@@ -57,7 +57,7 @@ export default function PitchDeck() {
         </div>
         <div className={styles.slideFooter}>
           <span>Enterprise AI Portal</span>
-          <span>02 / 09</span>
+          <span>02 / 05</span>
         </div>
       </div>
     ),
@@ -75,7 +75,7 @@ export default function PitchDeck() {
         </div>
         <div className={styles.slideFooter}>
           <span>Enterprise AI Portal</span>
-          <span>03 / 09</span>
+          <span>03 / 05</span>
         </div>
       </div>
     ),
@@ -105,7 +105,7 @@ export default function PitchDeck() {
         </div>
         <div className={styles.slideFooter}>
           <span>Enterprise AI Portal</span>
-          <span>04 / 09</span>
+          <span>04 / 05</span>
         </div>
       </div>
     ),
@@ -136,126 +136,7 @@ export default function PitchDeck() {
         </div>
         <div className={styles.slideFooter}>
           <span>Enterprise AI Portal</span>
-          <span>05 / 09</span>
-        </div>
-      </div>
-    ),
-    // Slide 6: Security
-    () => (
-      <div className={styles.slideStandard} style={{ background: 'var(--background)' }}>
-        <div className={styles.slideHeader}>
-          <h2 className={styles.slideTitle}>Enterprise Security & Compliance</h2>
-        </div>
-        <div className={styles.slideContent}>
-          <div className={styles.grid2}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Shield size={120} color="var(--success)" />
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '20px' }}>
-              <div style={{ borderLeft: '4px solid var(--success)', paddingLeft: '16px' }}>
-                <strong>SSO Integration</strong><br/>
-                <span style={{ fontSize: '16px' }}>Seamless integration with Microsoft Entra ID and Google Workspace.</span>
-              </div>
-              <div style={{ borderLeft: '4px solid var(--success)', paddingLeft: '16px' }}>
-                <strong>Granular RBAC</strong><br/>
-                <span style={{ fontSize: '16px' }}>Zero-trust architecture with read/write/delete permission matrices.</span>
-              </div>
-              <div style={{ borderLeft: '4px solid var(--success)', paddingLeft: '16px' }}>
-                <strong>Immutable Audit Logs</strong><br/>
-                <span style={{ fontSize: '16px' }}>Comprehensive tracking of all authentication and system events.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.slideFooter}>
-          <span>Enterprise AI Portal</span>
-          <span>06 / 09</span>
-        </div>
-      </div>
-    ),
-    // Slide 7: Business Benefits
-    () => (
-      <div className={styles.slideStandard}>
-        <div className={styles.slideHeader}>
-          <h2 className={styles.slideTitle}>Business Benefits</h2>
-        </div>
-        <div className={styles.slideContent}>
-           <div className={styles.grid2}>
-            <div className={styles.iconBlock}>
-              <h3 className={styles.iconBlockTitle}>Cost Reduction</h3>
-              <p>Consolidating AI vendors into a single internal platform reduces licensing overhead by an estimated 35% annually.</p>
-            </div>
-            <div className={styles.iconBlock}>
-              <h3 className={styles.iconBlockTitle}>Operational Efficiency</h3>
-              <p>Employees save 4-6 hours weekly by eliminating app switching and leveraging domain-specific Copilot automations.</p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.slideFooter}>
-          <span>Enterprise AI Portal</span>
-          <span>07 / 09</span>
-        </div>
-      </div>
-    ),
-    // Slide 8: Success Metrics
-    () => (
-      <div className={styles.slideStandard}>
-        <div className={styles.slideHeader}>
-          <h2 className={styles.slideTitle}>Projected Success Metrics</h2>
-        </div>
-        <div className={styles.slideContent}>
-          <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', alignItems: 'center' }}>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '64px', fontWeight: 800, color: 'var(--primary)', marginBottom: '8px' }}>40%</div>
-              <div style={{ fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)', textTransform: 'uppercase' }}>Reduction in App Switching</div>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '64px', fontWeight: 800, color: 'var(--success)', marginBottom: '8px' }}>95%</div>
-              <div style={{ fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)', textTransform: 'uppercase' }}>AI Screening Accuracy</div>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '64px', fontWeight: 800, color: 'var(--warning)', marginBottom: '8px' }}>3x</div>
-              <div style={{ fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)', textTransform: 'uppercase' }}>Faster Report Generation</div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.slideFooter}>
-          <span>Enterprise AI Portal</span>
-          <span>08 / 09</span>
-        </div>
-      </div>
-    ),
-    // Slide 9: Future Roadmap
-    () => (
-      <div className={styles.slideStandard} style={{ background: 'var(--background)' }}>
-        <div className={styles.slideHeader}>
-          <h2 className={styles.slideTitle}>Future Roadmap</h2>
-        </div>
-        <div className={styles.slideContent}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', width: '100%' }}>
-            <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
-              <div style={{ width: '80px', fontWeight: 700, color: 'var(--primary)' }}>Q3 2026</div>
-              <div style={{ flex: 1, padding: '20px', backgroundColor: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px' }}>
-                Finance Copilot autonomous insights and automated tax compliance auditing.
-              </div>
-            </div>
-            <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
-              <div style={{ width: '80px', fontWeight: 700, color: 'var(--primary)' }}>Q4 2026</div>
-              <div style={{ flex: 1, padding: '20px', backgroundColor: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px' }}>
-                Advanced Predictive Models (Churn & Supply Chain) deployed to production.
-              </div>
-            </div>
-            <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
-              <div style={{ width: '80px', fontWeight: 700, color: 'var(--primary)' }}>2027</div>
-              <div style={{ flex: 1, padding: '20px', backgroundColor: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px' }}>
-                Multi-modal AI support (Video Gen AI) and unified global rollout.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.slideFooter}>
-          <span>Enterprise AI Portal</span>
-          <span>09 / 09</span>
+          <span>05 / 05</span>
         </div>
       </div>
     ),
@@ -283,24 +164,21 @@ export default function PitchDeck() {
           <div className={styles.presentationContainer}>
             <div className={styles.slide}>
               <CurrentSlideComponent />
-            </div>
-            <div className={styles.controls}>
-              <Button variant="ghost" onClick={handlePrev}>
-                <ChevronLeft size={20} style={{ marginRight: '8px' }} /> Previous
-              </Button>
-              <div className={styles.indicators}>
+              <button className={styles.navLeft} onClick={handlePrev} disabled={currentSlide === 0}>
+                <ChevronLeft size={24} />
+              </button>
+              <button className={styles.navRight} onClick={handleNext} disabled={currentSlide === SLIDES.length - 1}>
+                <ChevronRight size={24} />
+              </button>
+              <div className={styles.dotsOverlay}>
                 {SLIDES.map((_, i) => (
                   <div 
                     key={i} 
                     className={`${styles.dot} ${i === currentSlide ? styles.active : ''}`} 
                     onClick={() => setCurrentSlide(i)}
-                    style={{ cursor: 'pointer' }}
                   />
                 ))}
               </div>
-              <Button variant="primary" onClick={handleNext}>
-                Next <ChevronRight size={20} style={{ marginLeft: '8px' }} />
-              </Button>
             </div>
           </div>
         </main>

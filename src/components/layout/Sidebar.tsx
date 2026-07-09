@@ -64,8 +64,6 @@ export const Sidebar = () => {
             <Map size={20} /> Roadmap
           </div>
         </Link>
-        <div className={styles.navItem}><Star size={20} /> Favorites</div>
-        <div className={styles.navItem}><FileBarChart size={20} /> Reports</div>
 
         <div style={{ padding: '16px 16px 8px', fontSize: '12px', fontWeight: 'bold', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
           Administration
